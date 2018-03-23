@@ -22,17 +22,6 @@
         </div>
       </div>
       <div class="header-avator-con">
-          <a @mouseover="getc = true">捐助</a>
-          <Modal
-            v-model="getc"
-            title="捐助Yearning"
-            width="640">
-            <h3>让Yearning持续提供更好的功能与服务。</h3>
-            <br>
-            <img  height="300" width="300" src="./assets/alipay.jpg" />
-            <img height="300" width="300" src="./assets/wechat.jpg" />
-          </Modal>
-        <a href="https://cookiey.github.io/Yearning-document/used/" target="_Blank">使用说明</a>
         <div @click="handleFullScreen" v-if="showFullScreenBtn" class="full-screen-btn-con">
           <Tooltip :content="isFullScreen ? '退出全屏' : '全屏'" placement="bottom">
             <Icon :type="isFullScreen ? 'arrow-shrink' : 'arrow-expand'" :size="23"></Icon>
@@ -95,7 +84,7 @@
   </div>
   <Modal
     v-model="statement"
-    title="欢迎使用Yearning SQL审核平台"
+    title="欢迎使用MySQL审核平台"
     width="600"
     :mask-closable="false"
     :closable="false"
@@ -109,7 +98,7 @@
     <br>
     <H3>关于二次开发的声明:</H3>
     <br>
-    <p>作为一款开源平台。Yearning很希望有更多的开发者一起参与到开发中。同时也鼓励各公司根据自身业务对平台进行二次开发及定制。
+    <p>作为一款开源平台。很希望有更多的开发者一起参与到开发中。同时也鼓励各公司根据自身业务对平台进行二次开发及定制。
       Yearning v1.0.0 采用Apache2.0许可证,以下为许可中相关的义务与责任。</p>
     <p>1.需要给代码的用户一份Apache Licence</p>
     <p>2.如果你修改了代码，需要在被修改的文件中说明。</p>
